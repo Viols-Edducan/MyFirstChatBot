@@ -5,7 +5,7 @@ bot = telebot.TeleBot('5984708209:AAGEq7givx7l_J9GS5yCRf_3QJoYlrWfJt4')
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
-    bot.send_message(message.chat.id, "Привіт! Я твій чат-бот. Я відповім на команди /start і /help.")
+    bot.send_message(message.chat.id, "Привіт! Я РЕАЛЬНО ТВІЙ чат-бот. Я відповім на команди /start і /help.")
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
